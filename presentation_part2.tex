@@ -1,0 +1,43 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+\usepackage{tikz,pgfplots}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage[language=english, backend=biber, style=alphabetic, sorting=nyt]{biblatex}
+
+\title{Public Key Cryptography}
+\author{Simon Pohmann}
+\institute{University of Oxford}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\newtheorem{algorithm}{Algorithm}
+
+\pgfplotsset{compat=1.16}
+\pgfplotsset{every x tick label/.append style={font=\tiny}}
+\pgfplotsset{every y tick label/.append style={font=\tiny}}
+
+\begin{document}
+
+\begin{frame}
+    \frametitle{Asymmetric Cryptography}
+
+    \includegraphics[width = \textwidth]{asymmetric_crypto4.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Man-in-the-Middle Attack}
+
+    \begin{overlayarea}{\textwidth}{\textheight}
+        \only<1>{\includegraphics[width = \textwidth]{man_in_the_middle1.pdf}}
+        \only<2>{\includegraphics[width = \textwidth]{man_in_the_middle2.pdf}}
+        \only<3>{\includegraphics[width = \textwidth]{man_in_the_middle3.pdf}}
+        \only<4>{\includegraphics[width = \textwidth]{man_in_the_middle4.pdf}}
+        \only<5>{\includegraphics[width = \textwidth]{man_in_the_middle5.pdf}}
+    \end{overlayarea}
+\end{frame}
+
+\end{document}

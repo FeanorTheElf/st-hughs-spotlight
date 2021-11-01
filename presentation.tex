@@ -1,0 +1,121 @@
+\documentclass{beamer}
+\usetheme{CambridgeUS}
+
+\usepackage{tikz,pgfplots}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wasysym}
+\usepackage[language=english, backend=biber, style=alphabetic, sorting=nyt]{biblatex}
+
+\title{Public Key Cryptography}
+\author{Simon Pohmann}
+\institute{University of Oxford}
+
+\newcommand{\Z}{\mathbb{Z}}
+
+\newtheorem{algorithm}{Algorithm}
+
+\pgfplotsset{compat=1.16}
+\pgfplotsset{every x tick label/.append style={font=\tiny}}
+\pgfplotsset{every y tick label/.append style={font=\tiny}}
+
+\begin{document}
+
+\frame{\titlepage}
+
+%\frame{
+%    \frametitle{Contents}
+%    \tableofcontents
+%}
+
+\begin{frame}
+    \frametitle{Remember Patrick's talk...}
+
+    \begin{center}
+        \includegraphics[height = 0.7\textheight]{crypto.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Where do we encounter cryptography?}
+    
+    \begin{center}
+        \only<1>{\includegraphics[width = 0.9\textwidth]{http.png}}
+        \only<2>{\includegraphics[width = 0.9\textwidth]{https.png}}
+        \only<3>{\includegraphics[height = 0.7\textheight]{whatsapp_e2e.png}}
+        \only<4>{\includegraphics[height = 0.9\textheight]{wlan.png}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Beginnings of cryptography}
+
+    Caesar's cipher
+    \begin{center}
+        \includegraphics{caesar.pdf}
+    \end{center}
+    \pause
+    \begin{itemize}
+        \item Very insecure (even if shift is unknown)
+        \item Symmetric cipher
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Symmetric cryptography}
+
+    \begin{overlayarea}{\textwidth}{\textheight}
+        \only<1>{\includegraphics[width = \textwidth]{symmetric_crypto1.pdf}}
+        \only<2>{\includegraphics[width = \textwidth]{symmetric_crypto2.pdf}}
+        \only<3>{\includegraphics[width = \textwidth]{symmetric_crypto3.pdf}}
+        \only<4>{\includegraphics[width = \textwidth]{symmetric_crypto4.pdf}}
+        \only<5>{\includegraphics[width = \textwidth]{symmetric_crypto5.pdf}}
+    \end{overlayarea}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Asymmetric cryptography}
+
+    \begin{overlayarea}{\textwidth}{\textheight}
+        \only<1>{\includegraphics[width = \textwidth]{asymmetric_crypto1.pdf}}
+        \only<2>{\includegraphics[width = \textwidth]{asymmetric_crypto2.pdf}}
+        \only<3>{\includegraphics[width = \textwidth]{asymmetric_crypto3.pdf}}
+        \only<4>{\includegraphics[width = \textwidth]{asymmetric_crypto4.pdf}}
+    \end{overlayarea}
+\end{frame}
+
+\begin{frame}
+    \frametitle{An issue in Public Key Crypto}
+
+    \begin{itemize}
+        \item Symmetric cryptography can (in principle) be ``perfectly secure''
+        \item Asymmetric cryptography cannot
+    \end{itemize}
+
+    \begin{overlayarea}{\textwidth}{\textheight}
+        \only<1>{\includegraphics[width = \textwidth]{attack1.pdf}}
+        \only<2>{\includegraphics[width = \textwidth]{attack2.pdf}}
+        \only<3>{\includegraphics[width = \textwidth]{attack3.pdf}}
+    \end{overlayarea}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Public Key Crypto}
+
+    \begin{center}
+        Asymmetric cryptography relies on problems, that cannot be solved \textbf{efficiently} or within \textbf{reasonable time}
+    \end{center}
+    \pause
+    \vspace{5em}
+    \begin{itemize}
+        \item Usually problems with mathematical structure
+        \pause
+        \item Currently: Prime factorization and discrete logarithm
+        \pause
+        \item In the future: Quantum-computer safe problems
+    \end{itemize}
+\end{frame}
+
+\end{document}
