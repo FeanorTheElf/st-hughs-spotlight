@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE ipe SYSTEM "ipe.dtd">
 <ipe version="70218" creator="Ipe 7.2.18">
-<info created="D:20211026123437" modified="D:20211027122855"/>
+<info created="D:20211026123437" modified="D:20211105203611"/>
 <ipestyle name="basic">
 <symbol name="arrow/arc(spx)">
 <path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
@@ -513,7 +513,7 @@ h
 <path matrix="1 0 0 1 68 -76" stroke="black" pen="heavier">
 4 0 0 4 48 160 e
 </path>
-<text matrix="1 0 0 1 64 -100" transformations="translations" pos="32 144" stroke="black" type="label" width="83.749" height="7.2" depth="1.93" valign="baseline">Eavesdropper &quot;Eve&quot;</text>
+<text matrix="1 0 0 1 64 -100" transformations="translations" pos="32 144" stroke="black" type="label" width="87.428" height="7.2" depth="1.93" valign="baseline">Eavesdropper &quot;Yves&quot;</text>
 <path matrix="1 0 0 1 104 0" stroke="black">
 32 80 m
 56 80 l

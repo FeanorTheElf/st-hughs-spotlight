@@ -40,4 +40,83 @@
     \end{overlayarea}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Authentication}
+
+    \begin{itemize}
+        \item To prevent Man-in-the-Middle attacks, Alice must verify that the message sender is Bob
+        \pause
+        \item Use of ``Digital Signatures''
+    \end{itemize}
+    \pause
+    \begin{block}{Digital Signature}
+        Like Public Key Encryption, but the other way round:
+        \pause
+        \begin{itemize}
+            \item Using the Private Key, one can create a signature
+            \pause
+            \item Using the Public Key, one can verify a signature
+        \end{itemize}
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{Certification Authorities}
+
+    \begin{block}{Digital Signature}
+        Like Public Key Encryption, but the other way round:
+        \begin{itemize}
+            \item Using the Private Key, one can create a signature
+            \item Using the Public Key, one can verify a signature
+        \end{itemize}
+    \end{block}
+    \pause
+    \begin{center}
+        To verify Bob's signature, Alice still needs his public key!
+    \end{center}
+    \pause
+    \begin{itemize}
+        \item Instead use a Certification Authority that certifies that Bob's Public Key belongs to Bob
+        \pause
+        \item Everyone ``knows'' the Public Keys of the Certification Authorities
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Certification Authorities}
+
+    \begin{overlayarea}{\textwidth}{\textheight}
+        \only<1>{\includegraphics[width = \textwidth]{certification_authority1.pdf}}
+        \only<2>{\includegraphics[width = \textwidth]{certification_authority2.pdf}}
+        \only<3>{\includegraphics[width = \textwidth]{certification_authority3.pdf}}
+        \only<4>{\includegraphics[width = \textwidth]{certification_authority4.pdf}}
+        \only<5>{\includegraphics[width = \textwidth]{certification_authority5.pdf}}
+    \end{overlayarea}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Certification Authorities}
+
+    \includegraphics[width = \textwidth]{https.png}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Certification Authorities}
+
+    \begin{center}
+        \includegraphics[height = \textheight]{wlan.png}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Thank you for listening!}
+
+    \begin{center}
+        \includegraphics[height = 0.6\textheight]{xkcd2.png}
+        \\
+        Source: \href{https://xkcd.com/}{www.xkcd.com}
+    \end{center}
+\end{frame}
+
 \end{document}
